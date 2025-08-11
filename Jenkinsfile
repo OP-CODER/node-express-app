@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/OP-CODER/node-express-app.git'
+                git branch: 'main', url: 'https://github.com/OP-CODER/node-express-app.git'
             }
         }
         stage('Build Docker Image') {
