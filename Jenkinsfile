@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 bat """
-                docker run --rm -v "C:/Users/youruser/.jenkins/workspace/node-express-app:/usr/src/app" -w /usr/src/app ${IMAGE_NAME} npm test
+                docker run --rm -v "C:/Users/mohda/.jenkins/workspace/node-express-app:/usr/src/app" -w /usr/src/app ${IMAGE_NAME} npm test
                 """
             }
         }
