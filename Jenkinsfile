@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run tests inside the Docker container using the built image
-                bat "docker run --rm ${IMAGE_NAME} npm test"
+                bat "docker run --rm node-express-app npm test"
             }
         }
         stage('Deploy') {
