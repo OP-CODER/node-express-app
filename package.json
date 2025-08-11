@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "author": "Your Name",
+  "author": "Mohammed Anas",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
